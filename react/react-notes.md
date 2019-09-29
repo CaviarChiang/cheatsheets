@@ -1,23 +1,24 @@
 # Component Architecture
 
-Single responsibility
-Gather brains in the higher hierarchy: more stupid components than smart ones
+Single responsibility  
+Gather brains in the higher hierarchy: more stupid  
+components than smart ones  
 
 # Component Lifecycle
 
-`componentDidMount` triggered directly after `render`
-`componentWillUpdate` triggered right before the cmp has been updated
-`componentDidUpdate` triggered directly after the cmp has been updated
+`componentDidMount` triggered directly after `render`  
+`componentWillUpdate` triggered right before the cmp has been updated  
+`componentDidUpdate` triggered directly after the cmp has been updated  
 
 # State & Prop
 
-State: private, cmp can change its own states
+State: private, cmp can change its own states  
 Props: shared between cmps, cmp cannot change props directly themselves (should *never modify props*)
 
-Need a `constructor` method in order to init the state
+Need a `constructor` method in order to init the state  
 Pass down states to children, the data becomes props
 
-The only way to modify the state is through *`setState`*s
+The only way to modify the state is through *`setState`*s  
 Whenever the state changes the component will be *re-rendered*
 
 Inverse data flow:
@@ -47,12 +48,12 @@ handleChange(e) {
 
 # Events
 
-`onChange` and `onSubmit` are react event listeners
+`onChange` and `onSubmit` are react event listeners  
 To use `this` in event handlers, bind handlers with `this` in `constructor`
 
 # TODOs
 
-Add OnlineUsers cmp
+Add OnlineUsers cmp  
 Add typing indicators
 
 
