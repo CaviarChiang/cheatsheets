@@ -1,24 +1,28 @@
-# Create a Django Project
+# Create a Node.js Project
 
-### Start a Project
+[Build Node.js RESTful API](https://www.codementor.io/olatundegaruba/nodejs-restful-apis-in-10-minutes-q0sgsfhbd)
 
-    `django-admin startproject firstdjango .`
+1. Package setup
 
-### Start an Application
+    `npm init`
+    `npm install --save-dev nodemon`
 
-1. Create a new application
+    `npm install express --save`
+    `npm install mongoose --save`
 
-    `python manage.py startapp firstapp`
+2. Setup schema
 
-2. Crreate a database
+3. Setup routes
 
-    `python manage.py migrate`
+4. Setup controller
 
-3. Add app name to `INSTALLED_APPS` in `settings.py`
+5. Put everything together in `server.js`
 
-### MVC
+6. Start MongoDB server
 
-* Configure URL routes in `urls.py`
-* Create templated views in `myapp/templates/myapp`
-* Put static files in `myapp/static/myapp`
-* Create controllers in `myapp/views.py`
+    `mongod`
+
+7. Run app
+
+    `npm run start`
+
